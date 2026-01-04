@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Poppins&family=Montserrat&family=Open+Sans&family=Lato&family=Nunito&family=IBM+Plex+Sans&family=Source+Sans+3&family=DM+Sans&display=swap');
+
+#body{
+  margin: 0px auto;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.top-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgray;
+  margin: -10px;
+  padding: 20px;
+  z-index: 999;
+  width: 98.5%;
+}
+.my-logo{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.top-middle{
+  width: 800px;
+  margin-left: -100px;
+}
+.top-right{
+  margin-left: -130px;
+}
+.login-btn, .cart-btn{
+  border-radius: 10px;
+  background-color: gold;
+  color: rgb(3, 3, 82);
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  gap: 20px;
+  width: 120px;
+  border: 2px solid rgb(3, 3, 82);
+  margin-left: 20px;
+  cursor: pointer;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cart-btn{
+  width: 120px;
+  background-color: rgb(3, 3, 82);
+  color: gold;
+}
+.item-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 22px;
+  list-style-type: none;
+  color: rgb(3, 3, 82);
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item:hover{
+  text-decoration: overline;
+  text-decoration-color: gold;
+  cursor: pointer;
+}
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(3, 3, 82);
+  z-index: -999;
+  margin-top: 20px;
+  margin: -10px;
+  padding: 20px;
+  width: 98.5%;
+}
+.card-content{
+  display: block;
+  margin: 0px auto;
+}
+.bg-img{
+  opacity: 70%;
+  margin: 40px auto;
+  margin-top: 80px;
+  margin-right: -100px;
+  display: block;
+  text-align: center;
+  height: 400px;
+  width: auto;
+}
+.text-box{
+  position: absolute;
+  top: 395px;
+  left: 955px;
+  font-size: 36px;
+  color: #fff6e8;
+  font-family: freeflow;
+  text-shadow: 0 0 15px #fff6e8;
+}
+.input-box{
+  display: block;
+  margin: 0 auto;
+  margin-left: 0px;
+  width: 40%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid rgb(3, 3, 82);
+}
+.price-box{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 20px;
+  color: gold;
+  position: relative;
+  top: -50px;
+  right: -80px;
+}
+.options{
+  display: block;
+  margin-left: 20px;
+}
+.font-options, .color-options, .size-options{
+  height: 300px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  width: 400px;
+  background-color: lightgray;
+}
+.color-options, .size-options{
+  height: 100px;
+}
+.font-title, .color-title, .size-title{
+  color: rgb(3, 3, 82);
+  margin-top: 5px;
+}
+label{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.5;
+}
+input[type="radio"] {
+  display: none;
+}
+.font-options-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.font-options label {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+input[name="font"]:checked + label {
+  color: gold;
+  background-color: rgb(3, 3, 82);
+  border: 2px solid black;
+}
+.color-options-inner {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: start;
+}
+.color {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: transform 0.2s, border 0.2s;
+}
+.color:hover {
+  transform: scale(1.1);
+}
+input[type="radio"]:checked + .color {
+  border: 3px solid #111827;
+}
+.warm { background: #fff6e8; }
+.blue { background: #739bd0; }
+.green { background: #16a34a; }
+.red { background: #dc2626; }
+.white { background: white; }
+.orange { background: #ea580c; }
+.pink { background: #db2777; }
+.yellow { background: #fff44f;}
+.size-options-inner{
+  display: flex;
+  gap: 12px;
+  margin-top: -20px;
+  align-items: center;
+  justify-content: start;
+}
+.size{
+  border-radius: 10px;
+  width: 100px;
+  gap: 10px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #e5e7eb;
+}
+.regular, .medium, .large{
+  font-size: 18px;
+  font-weight: bold;
+}
+input[name="size"]:checked + label {
+  color: gold;
+  background-color: rgb(3, 3, 82);
+  border: 2px solid black;
+}
+@keyframes glowPulse {
+  0% { opacity: 0.8; }
+  50% {opacity: 0.9; }
+  100% { opacity: 1; }
+}

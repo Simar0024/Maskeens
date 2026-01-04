@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maskeen Customs</title>
+    <link rel="stylesheet" href="./neon.css">
+    <link rel="shortcut icon" href="new_logo.png" type="image/x-icon">
+</head>
+<body>
+    <header class="top-header">
+        <div class="top-left">
+            <img src="./new_logo.png" alt="Logo" class="my-logo">
+        </div>
+        <div class="top-middle">
+            <ul class="item-list">
+                <li class="item">Home Decor</li>
+                <li class="item">Neon Signs</li>
+                <li class="item">Gift Items</li>
+                <li class="item">Branding</li>
+            </ul>
+        </div>
+        <div class="top-right">
+            <button class="login-btn">Login</button>
+            <button class="cart-btn">Add to Cart</button>
+        </div>
+    </header>
+    <main class="content">
+        <div class="options">
+            <div class="font-options">
+                <h2 class="font-title">Choose Fonts</h2>
+                <div class="font-options-inner">
+                    <input type="radio" name="font" id="freeflow" value="freeflow" checked>
+                    <label for="freeflow" style="font-family: freeflow;">FreeFlow</label>
+                    <input type="radio" name="font" id="Brittany Signature" value="Brittany Signature">
+                    <label for="Brittany Signature" style="font-family: Brittany Signature;">Brittany</label>
+                    <input type="radio" name="font" id="Dream Angel" value="Dream Angel">
+                    <label for="Dream Angel" style="font-family: Dream Angel;">Dream Angel</label>
+                    <input type="radio" name="font" id="Neoneon" value="Neoneon">
+                    <label for="Neoneon" style="font-family: Neoneon;">Neoneon</label>
+                    <input type="radio" name="font" id="Funky Signature" value="Funky Signature">
+                    <label for="Funky Signature" style="font-family: Funky Signature;">Funky</label>
+                    <input type="radio" name="font" id="Handestonie" value="Handestonie">
+                    <label for="Handestonie" style="font-family: Handestonie;">Handestonie</label>
+                    <input type="radio" name="font" id="Amanda Vinola" value="Amanda Vinola">
+                    <label for="Amanda Vinola" style="font-family: Amanda Vinola;">Amanda Vinola</label>
+                    <input type="radio" name="font" id="Butterland" value="Butterland">
+                    <label for="Butterland" style="font-family: Butterland;">Butterland</label>
+                    <input type="radio" name="font" id="Bastogne" value="Bastogne">
+                    <label for="Bastogne" style="font-family: Bastogne;">Bastogne</label>
+                    <input type="radio" name="font" id="Foundry Font Pack" value="Foundry Font Pack">
+                    <label for="Foundry Font Pack" style="font-family: Foundry Font Pack;">Foundry Font</label>
+                    <input type="radio" name="font" id="Barques" value="Barques">
+                    <label for="Barques" style="font-family: Barques;">Barques</label>
+                    <input type="radio" name="font" id="Geraldyne Demo" value="Geraldyne Demo">
+                    <label for="Geraldyne Demo" style="font-family: Geraldyne Demo;">Geraldyne</label>
+                    <input type="radio" name="font" id="Cosmodrome Monoline" value="Cosmodrome Monoline">
+                    <label for="Cosmodrome Monoline" style="font-family: Cosmodrome Monoline;">Cosmodrome</label>
+                    <input type="radio" name="font" id="Lovelo Line" value="Lovelo Line">
+                    <label for="Lovelo Line" style="font-family: Lovelo Line ;">Lovelo Line</label>
+                    <input type="radio" name="font" id="Golden Hopes" value="Golden Hopes PERSONAL USE ONLY">
+                    <label for="Golden Hopes" style="font-family: Golden Hopes PERSONAL USE ONLY;">Golden Hopes</label>
+                    <input type="radio" name="font" id="Rocket Clouds" value="Rocket Clouds DEMO">
+                    <label for="Rocket Clouds" style="font-family: Rocket Clouds DEMO;">Rocket Clouds</label>
+                </div>
+            </div>
+            <div class="color-options">
+                <h2 class="color-title">Choose Text Color</h2>
+                <div class="color-options-inner">
+                    <input type="radio" name="color" id="warm" value="#fff6e8" checked>
+                    <label for="warm" class="color warm"></label>
+                    <input type="radio" name="color" id="blue" value="#739bd0">
+                    <label for="blue" class="color blue"></label>
+                    <input type="radio" name="color" id="green" value="#16a34a">
+                    <label for="green" class="color green"></label>
+                    <input type="radio" name="color" id="red" value="#dc2626">
+                    <label for="red" class="color red"></label>
+                    <input type="radio" name="color" id="white" value="white">
+                    <label for="white" class="color white"></label>
+                    <input type="radio" name="color" id="orange" value="#ea580c">
+                    <label for="orange" class="color orange"></label>
+                    <input type="radio" name="color" id="pink" value="#db2777">
+                    <label for="pink" class="color pink"></label>
+                    <input type="radio" name="color" id="yellow" value="#fff44f">
+                    <label for="yellow" class="color yellow"></label>
+                </div>
+            </div>
+            <div class="size-options">
+                <h2 class="size-title">Choose Sizing Options</h2>
+                <div class="size-options-inner">
+                    <input type="radio" name="size" id="regular" value="36px"checked>
+                    <label for="regular" class="regular size">Regular</label>
+                    <input type="radio" name="size" id="medium" value="46px">
+                    <label for="medium" class="medium size">Medium</label>
+                    <input type="radio" name="size" id="large" value="56px">
+                    <label for="large" class="large size">Large</label>
+                </div>
+            </div>
+        </div>
+        <div class="card-content">
+            <p></p>
+            <img src="./bg.jpg" alt="Background" class="bg-img">
+            <input type="text" placeholder="Text Preview" class="input-box anythingInput" onkeyup="getValue();" id="textInput">
+            <p class="text-box displayValue">Text Preview</p>
+            <p class="price-box">Price: 0</p>
+        </div>
+    </main>
+    <script src="./neon.js"></script>
+</body>
+</html>
